@@ -18,5 +18,5 @@ resource "null_resource" "cleanup" {
 
 data "local_file" "file" {
   count    = var.output_path != null ? 1 : 0
-  filename = data.external.download.result.file_path
+  filename = data.external.download.result.output_path
 }
