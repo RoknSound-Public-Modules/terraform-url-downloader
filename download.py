@@ -17,6 +17,7 @@ def main(url, output_path):
     if output_path:
         with open(output_path,'wb') as output:
             output.write(content.read())
+    return json.dumps({'status': 'success', 'output_path': output_path})
 
 
 args = json.loads(stdin.read())
