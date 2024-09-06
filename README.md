@@ -1,2 +1,2 @@
 # terraform-url-downloader
-Terraform Workspace
+Terraform Module
